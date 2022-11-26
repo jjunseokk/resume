@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>박준석 홈페이지</title>
+</head>
+
+<body>
+    <div id="container">
+        <section class="size section1">
+            <div class="memoji">
+                <img src="./img/memoji.gif" alt="memoji">
+            </div>
+            <div class="text_box" data-trigger>
+                <span class="text"></span>
+            </div>
+            <div class="download">
+                <a href="./download/resume.pdf" download><button class="resume">이력서 다운로드</button></a>
+            </div>
+            <div class="link-area">
+                <a target="_blank" href="https://github.com/jjunseokk"><i
+                        class="icon-style fa-brands fa-github"></i></a>
+                <a target="_blank" href="https://velog.io/@oask12"><i class="icon-style fa-solid fa-blog"></i></a>
+
+            </div>
+        </section>
+        <section class="size section2">
+            <div class="skill">
+                <h1>SKILL</h1>
+                <span class="skill-box">
+                    <img src="https://assets.stickpng.com/images/5847f5bdcef1014c0b5e489c.png" alt="">
+                    <img src="https://cdn.freebiesupply.com/logos/large/2x/css3-logo-png-transparent.png" alt="">
+                    <img src="./img/js_logo.png" alt="">
+                    <img src="./img/jquery-1-logo-png-transparent.png" alt="">
+                    <img src="./img/bootstrap.png" alt="">
+                    <img src="./img/react_bootstrap.png" alt="">
+                    <img src="./img/react.png" alt="">
+                    <img src="./img/redux.png" alt="">
+                    <img src="./img/github.png" alt="">
+                    <img src="./img/slack.png" alt="">
+                </span>
+            </div>
+        </section>
+        <section class="size section3 wrap">
+            <h1>Project <span>PORTFOLIO</span></h1>
+
+            <ul class="auto">
+                <li class="btnStart"><i class="fas fa-play"></i></li>
+                <li class="btnStop"><i class="fas fa-pause"></i></li>
+            </ul>
+
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="inner">
+                        <div class="con">
+                            <img src="./img/todo.gif">
+                            <h2>TO DO LIST(반응형)</h2>
+                            <p>HTML/CSS, Javascript, bootstrap을 사용해
+                                리스트를 작성하고 삭제 또는 체크 기능을 구현하고 또 체크된 상태와
+                                아닌 상태를 분류할 수 있게 구현했습니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="inner">
+                        <div class="con">
+                            <img src="./img/random.gif">
+                            <h2>랜덤숫자 맞추기(반응형)</h2>
+                            <p>HTML/CSS, Javascript를 사용해 만들었습니다.
+                                사용자는 5번안에 숫자를 맞춰야 하고 사용자가 입력한 숫자보다 크면 "up" 작으면
+                                "down"이 나오고 5번안에 맞추면 "정답입니다!!!"가 출력되며 1보다 작고 100보다 작은 값을
+                                입력하면 "1부터 100사이의 숫자만 입력해주세요"가 출력되는 미니게임을 구현했습니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="inner">
+                        <div class="con">
+                            <img src="./img/news-weather.gif">
+                            <h2>뉴스와 서울날씨(반응형)</h2>
+                            <p>HTML/CSS, Javascript, Jquery를 사용해 만들었습니다.
+                                openWeatherAPI와 News API를 받아 만들었으며 현재는 서울날씨 현재온도, 최고/최저 온도, 풍속, 구름량 이 출력되고
+                                또 밑에는 뉴스를 출력해 카테고리 별로 볼 수 있으며 또 검색창에 원하는 검색어를 입력하면 검색어에 맞는 뉴스가
+                                출력됩니다. 또 맨 상단에는 현재 날짜와 시간이 출력되게 구현했습니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="inner">
+                        <div class="con">
+                            <img src="./img/junseok.gif">
+                            <h2>자기소개 페이지(반응형)</h2>
+                            <p>HTML/CSS, Javascript를 사용해 만들었습니다.
+                                페이지가 시작되면 자동으로 animation이 실행되는 함수와 마우스 스크롤이 일정구간 이동했을때
+                                animation을 실행하는 자기소개 페이지입니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="inner">
+                        <div class="con">
+                            <img src="./img/rackpaperscissors.gif">
+                            <h2>가위 바위 보 게임(반응형)</h2>
+                            <p>React를 사용해 만들었습니다.
+                                State, Component, props를 사용해 제작하였으며 사용자가 게임시작 버튼을 누르고 
+                                가위, 바위, 보 중에 하나를 선택하면 컴퓨터는 랜덤으로 가위, 바위, 보를 선택합니다.
+                                이긴사람은 빨간색, 진 사람은 초록색, 비기면 보라색으로 표시가 되는 미니게임을 구현했습니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="inner">
+                        <div class="con">
+                            <img src="./img/bonggusse.gif">
+                            <h2>봉구스 밥버거 리뉴얼(반응형)</h2>
+                            <p>React를 사용해 만들었습니다. 
+                                State, Component, props를 사용해 제작하였으며 json을 만들어 메뉴에 데이터를 만들어
+                                json 파일을 가져와 메뉴를 구성했으며, SPA로 작성하였으며, 카카오맵 API를 받아 카카오 맵을 구현했습니다.
+                                기존 봉구스밥버거 사이트를 리뉴얼해 만들었습니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="inner">
+                        <div class="con">
+                            <img src="./img/junmoive.gif">
+                            <h2>영화소개페이지(반응형)</h2>
+                            <p>React를 사용해 만들었습니다.
+                                State, Component, redux를 사용해 제작하였으며 movie API를 Axios로 받아 사용하였습니다.
+                                API 키가 중요하므로 API KEY값을 보이지 않게하고 구현하고 SPA로 작성하였습니다.
+                                인기있는 영화, 순위 영화, 다가오는 영화 목록을 볼 수 있고 영화를 선택하면 영화상세 설명과 
+                                예고편을 볼 수 있으며 MOVIES 항목에서 영화를 검색할 수 있도록 구현했습니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 좌우버튼 -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+            <!-- 페이징 버튼 -->
+            <div class="swiper-pagination"></div>
+        </section>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/ce31c7bfd0.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
