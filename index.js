@@ -29,7 +29,7 @@ const swiper = new Swiper('.wrap', {
     slidesPerView: "auto",
     grabCursor: true,
     centeredSlides: true,
-    speed: 1000,
+    speed: 1500,
     effect: "coverflow",
     coverflowEffect: {
         rotate: 50,
@@ -63,7 +63,6 @@ btnStop.addEventListener("click", () => {
 let showEmoji = document.querySelector(".skill") 
 window.addEventListener("scroll",function(){
     let value = window.scrollY;
-    console.log("scrollY", value);
     if(value>850){
         showEmoji.style.left="50%";
         showEmoji.style.transform="translate(-50%)";
@@ -113,14 +112,16 @@ let scroll = function(){
     
     let wheel = function(e){
         if(e.originalEvent.wheelDelta < 0){
-            if(moveIndex < 3){
+            if(moveIndex < 2){
                 moveIndex += 1;
                 moving(moveIndex);
+                console.log("moveIndex::::",moveIndex);
             };
         }else{
             if(moveIndex > 0){
                 moveIndex -= 1;
                 moving(moveIndex);
+                console.log("moveIndex::::",moveIndex);
             };
         };
     };
